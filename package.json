@@ -1,0 +1,60 @@
+{
+  "name": "postcss-retina-1px",
+  "version": "0.1.0",
+  "description": "Automatically transform your border in retina without change anything.",
+  "main": "./lib/index.js",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "1px border",
+    "retina"
+  ],
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "files": [
+    "lib"
+  ],
+  "author": "xifanii <xifanii@foxmail.com>",
+  "license": "MIT",
+  "repository": "xifanii/postcss-retina-1px",
+  "bugs": {
+    "url": "https://github.com/xifanii/postcss-retina-1px/issues"
+  },
+  "homepage": "https://github.com/xifanii/postcss-retina-1px",
+  "dependencies": {
+    "postcss": "^6.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.36",
+    "@types/jest": "^22.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^8.1.2",
+    "babel-jest": "^22.0.4",
+    "babel-preset-env": "^1.6.1",
+    "coveralls": "^3.0.0",
+    "eslint": "^3.19.0",
+    "eslint-config-postcss": "^2.0.2",
+    "jest": "^22.0.4",
+    "regenerator-runtime": "^0.11.1"
+  },
+  "scripts": {
+    "test": "jest && eslint *.js",
+    "test:update": "jest -u",
+    "coverage": "jest --coverage",
+    "coveralls": "npm run coverage && cat ./coverage/lcov.info | coveralls"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-postcss",
+    "parser": "babel-eslint",
+    "env": {
+      "jest": true
+    }
+  },
+  "jest": {
+    "transform": {
+      "^.*\\.spec\\.js$": "babel-jest"
+    }
+  }
+}
