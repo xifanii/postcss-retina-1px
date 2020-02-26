@@ -1,6 +1,6 @@
 {
   "name": "postcss-retina-1px",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Automatically transform your border in retina without change anything.",
   "main": "./lib/index.js",
   "keywords": [
